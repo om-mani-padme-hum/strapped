@@ -28,6 +28,6 @@
     }
   },
   "dependencies": {
-    "ezhtml": "^0.1.5"
+    "ezhtml": "^0.1.6"
   }
 }
