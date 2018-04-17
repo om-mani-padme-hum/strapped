@@ -158,6 +158,7 @@ class Page extends html.Container {
     else
       this.last('Body').append(row);
 
+    /** Allow for call chaining */
     return row;
   }
   

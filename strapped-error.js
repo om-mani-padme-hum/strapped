@@ -18,7 +18,7 @@ class StrappedError {
     this.color(data.color || 'danger');
     this.cols(data.cols || 6);
     this.stack(new Error().stack);
-    this.strong(data.strong || 'StrappedError:');
+    this.strong(data.strong || Error:');
     this.text(data.text || '');
   }
   
@@ -31,7 +31,7 @@ class StrappedError {
    * @signature color(color)
    * @added v0.2.0
    * @param color string
-   * @throws TypeStrappedError if `color` is not a valid [string]
+   * @throws TypeError if `color` is not a valid [string]
    * @returns this
    * @description Sets the Bootstrap color that should be used for this error alert.
    */
@@ -46,7 +46,7 @@ class StrappedError {
     
     /** Handle errors */
     else
-      throw new TypeStrappedError(`${this.constructor.name}.color(): Invalid signature (${typeof arg1}).`);
+      throw new TypeError(`${this.constructor.name}.color(): Invalid signature (${typeof arg1}).`);
     
     /** Allow for call chaining */
     return this;
@@ -61,7 +61,7 @@ class StrappedError {
    * @signature cols(count)
    * @added v0.2.0
    * @param count number
-   * @throws TypeStrappedError if `count` is not a valid [number]
+   * @throws TypeError if `count` is not a valid [number]
    * @returns this
    * @description Sets the number of Bootstrap columns that should be used for this error alert.
    */
@@ -76,7 +76,7 @@ class StrappedError {
     
     /** Handle errors */
     else
-      throw new TypeStrappedError(`${this.constructor.name}.size(): Invalid signature (${typeof arg1}).`);
+      throw new TypeError(`${this.constructor.name}.size(): Invalid signature (${typeof arg1}).`);
     
     /** Allow for call chaining */
     return this;
@@ -91,7 +91,7 @@ class StrappedError {
    * @signature strong(text)
    * @added v0.2.0
    * @param text string
-   * @throws TypeStrappedError if `text` is not a valid [string]
+   * @throws TypeError if `text` is not a valid [string]
    * @returns this
    * @description Sets any optional strong text that should be used for this error alert.
    */
@@ -106,7 +106,7 @@ class StrappedError {
     
     /** Handle errors */
     else
-      throw new TypeStrappedError(`${this.constructor.name}.strong(): Invalid signature (${typeof arg1}).`);
+      throw new TypeError(`${this.constructor.name}.strong(): Invalid signature (${typeof arg1}).`);
     
     /** Allow for call chaining */
     return this;
@@ -121,7 +121,7 @@ class StrappedError {
    * @signature stack(trace)
    * @added v0.2.0
    * @param trace string
-   * @throws TypeStrappedError if `trace` is not a valid [string]
+   * @throws TypeError if `trace` is not a valid [string]
    * @returns this
    * @description Sets the stack trace of the process when this alert occurred.
    */
@@ -136,7 +136,7 @@ class StrappedError {
     
     /** Handle errors */
     else
-      throw new TypeStrappedError(`${this.constructor.name}.stack(): Invalid signature (${typeof arg1}).`);
+      throw new TypeError(`${this.constructor.name}.stack(): Invalid signature (${typeof arg1}).`);
     
     /** Allow for call chaining */
     return this;
@@ -151,7 +151,7 @@ class StrappedError {
    * @signature text(text)
    * @added v0.2.0
    * @param text string
-   * @throws TypeStrappedError if `text` is not a valid [string]
+   * @throws TypeError if `text` is not a valid [string]
    * @returns this
    * @description Sets the error text that should serve as the primary message of this error alert.
    */
@@ -166,7 +166,7 @@ class StrappedError {
     
     /** Handle errors */
     else
-      throw new TypeStrappedError(`${this.constructor.name}.text(): Invalid signature (${typeof arg1}).`);
+      throw new TypeError(`${this.constructor.name}.text(): Invalid signature (${typeof arg1}).`);
     
     /** Allow for call chaining */
     return this;
