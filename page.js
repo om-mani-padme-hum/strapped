@@ -104,8 +104,9 @@ class Page extends html.Container {
   }
   
   /**
-   * @signature alertFromError(err)
-   * @param err Error|StrappedError
+   * @signature alertFromError(error)
+   * @added v0.2.0
+   * @param error Error|StrappedError
    * @returns [Row] 
    * @description Add new alert to page based on provided error.
    */

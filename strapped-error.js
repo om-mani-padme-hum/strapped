@@ -1,6 +1,6 @@
 /**
  * @class StrappedError
- * @added v0.1.4
+ * @added v0.2.0
  * @author Rich Lowe
  * @copyright 2018 Rich Lowe
  * @description Class for creating custom Bootstrap-compatable errors.
@@ -8,7 +8,7 @@
 class StrappedError {
   /**
    * @signature new StrappedError([data])
-   * @added v0.1.4
+   * @added v0.2.0
    * @param data Object
    * @returns StrappedError
    * @description Returns a new [StrappedError] instance and initializes using any property values in `data` that have a property 
@@ -24,12 +24,12 @@ class StrappedError {
   
   /**
    * @signature color()
-   * @added v0.1.4
+   * @added v0.2.0
    * @returns string
    * @description Returns the Bootstrap color that should be used for this error alert.
    *
    * @signature color(color)
-   * @added v0.1.4
+   * @added v0.2.0
    * @param color string
    * @throws TypeStrappedError if `color` is not a valid [string]
    * @returns this
@@ -54,12 +54,12 @@ class StrappedError {
   
   /**
    * @signature cols()
-   * @added v0.1.4
+   * @added v0.2.0
    * @returns number
    * @description Returns the number of Bootstrap columns that should be used for this error alert.
    *
    * @signature cols(count)
-   * @added v0.1.4
+   * @added v0.2.0
    * @param count number
    * @throws TypeStrappedError if `count` is not a valid [number]
    * @returns this
@@ -84,12 +84,12 @@ class StrappedError {
 
   /**
    * @signature strong()
-   * @added v0.1.4
+   * @added v0.2.0
    * @returns string
    * @description Returns any optional strong text that should be used for this error alert.
    *
    * @signature strong(text)
-   * @added v0.1.4
+   * @added v0.2.0
    * @param text string
    * @throws TypeStrappedError if `text` is not a valid [string]
    * @returns this
@@ -114,12 +114,12 @@ class StrappedError {
   
   /**
    * @signature stack()
-   * @added v0.1.4
+   * @added v0.2.0
    * @returns string
    * @description Returns the stack trace of the process when this alert occurred.
    *
    * @signature stack(trace)
-   * @added v0.1.4
+   * @added v0.2.0
    * @param trace string
    * @throws TypeStrappedError if `trace` is not a valid [string]
    * @returns this
@@ -144,12 +144,12 @@ class StrappedError {
   
   /**
    * @signature text()
-   * @added v0.1.4
+   * @added v0.2.0
    * @returns string
    * @description Returns the error text that should serve as the primary message of this error alert.
    *
    * @signature text(text)
-   * @added v0.1.4
+   * @added v0.2.0
    * @param text string
    * @throws TypeStrappedError if `text` is not a valid [string]
    * @returns this
