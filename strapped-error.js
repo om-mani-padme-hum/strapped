@@ -18,7 +18,7 @@ class StrappedError {
     this.color(data.color || 'danger');
     this.cols(data.cols || 6);
     this.stack(new Error().stack);
-    this.strong(data.strong || Error:');
+    this.strong(data.strong || 'Error:');
     this.text(data.text || '');
   }
   
