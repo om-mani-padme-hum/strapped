@@ -4,7 +4,6 @@ const html = require('ezhtml');
 /** Require local modules */
 const accordian = require('./accordian');
 const alert = require('./alert');
-const alertFromError = require('./alert-from-error');
 const anchor = require('./anchor');
 const badgeLink = require('./badge-link');
 const badge = require('./badge');
@@ -169,7 +168,6 @@ module.exports.WordBreakOpportunity = html.WordBreakOpportunity;
 /** Strapped exports */
 module.exports.Accordian = accordian.Accordian;
 module.exports.Alert = alert.Alert;
-module.exports.alertFromError = alertFromError.alertFromError;
 module.exports.Anchor = anchor.Anchor;
 module.exports.BadgeLink = badgeLink.BadgeLink;
 module.exports.Badge = badge.Badge;
