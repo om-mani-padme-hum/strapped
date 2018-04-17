@@ -26,5 +26,8 @@
         "impliedStrict": true
       }
     }
+  },
+  "dependencies": {
+    "ezhtml": "^0.1.5"
   }
 }
