@@ -104,13 +104,15 @@ class Page extends html.Container {
   }
   
   /**
-   * @signature alertFromError(error)
+   * @signature alertFromError(error[, lastContainer])
    * @added v0.2.0
+   * @updated v0.2.3
    * @param error Error|StrappedError
+   * @param lastContainer string
    * @returns [Row] 
-   * @description Add new alert to page based on provided error.
+   * @description Add new alert to body or `lastContainer` on page based on provided error.
    */
-  alertFromError(err) {
+  alertFromError(err, lastContainer) {
     const row = new strapped.Row();
     const col = new strapped.Col();
     const alert = new strapped.Alert();
@@ -149,6 +151,12 @@ class Page extends html.Container {
     row.append(col);
     col.append(alert);
     col.append(new strapped.LineBreak());
+
+    /** Add to last container of indicated type */
+    if ( typeof lastContainer == 'string' && lastContainer.length > 0 )
+      this.last(lastContainer).append(row);
+    else
+      this.last('Body').append(row);
 
     return row;
   }
