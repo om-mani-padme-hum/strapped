@@ -6,6 +6,10 @@ const util = require('util');
 
 /**
  * Class for rendering Bootstrap 4 web pages.
+ * @added v0.1.0
+ * @updated v0.2.0
+ * @updated v0.2.3
+ * @updated v0.2.9
  * @author Rich Lowe
  * @copyright 2018 Rich Lowe
  */
@@ -107,6 +111,7 @@ class Page extends html.Container {
    * @signature alertFromError(error[, lastContainer])
    * @added v0.2.0
    * @updated v0.2.3
+   * @updated v0.2.9
    * @param error Error|StrappedError
    * @param lastContainer string
    * @returns [Row] 
@@ -119,7 +124,7 @@ class Page extends html.Container {
 
     if ( err.constructor.name == 'StrappedError' ) {
       /** For customizable GeodeErrors, transfer properties to alert */
-      col.size(err.size());
+      col.size(err.cols());
       alert.color(err.color());
 
       /** Toss in some octicons for certain color tyeps */

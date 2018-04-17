@@ -1,6 +1,7 @@
 /**
  * @class StrappedError
  * @added v0.2.0
+ * @updated v0.2.9
  * @author Rich Lowe
  * @copyright 2018 Rich Lowe
  * @description Class for creating custom Bootstrap-compatable errors.
@@ -60,6 +61,7 @@ class StrappedError {
    *
    * @signature cols(count)
    * @added v0.2.0
+   * @updated v0.2.9
    * @param count number
    * @throws TypeError if `count` is not a valid [number]
    * @returns this
@@ -68,15 +70,15 @@ class StrappedError {
   cols(arg1) {
     /** Getter */
     if ( arg1 === undefined )
-      return this._size;
+      return this._cols;
     
     /** Setter */
     else if ( typeof arg1 == 'number' )
-      this._size = arg1; 
+      this._cols = arg1; 
     
     /** Handle errors */
     else
-      throw new TypeError(`${this.constructor.name}.size(): Invalid signature (${typeof arg1}).`);
+      throw new TypeError(`${this.constructor.name}.cols(): Invalid signature (${typeof arg1}).`);
     
     /** Allow for call chaining */
     return this;
