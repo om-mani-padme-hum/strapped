@@ -348,7 +348,7 @@ class Page extends html.Container {
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(body);
     else
-      this.last('Html').append(body);
+      this.last('HTML').append(body);
     
     /** Allow for call chaining */
     return body;
@@ -1313,7 +1313,7 @@ class Page extends html.Container {
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(head);
     else
-      this.last('Html').append(head);
+      this.last('HTML').append(head);
     
     /** Allow for call chaining */
     return head;
@@ -1410,7 +1410,7 @@ class Page extends html.Container {
    */
   html(arg1) {
     /** Create new element */
-    const html = new strapped.Html();
+    const html = new strapped.HTML();
     
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )

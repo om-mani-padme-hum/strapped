@@ -1,4 +1,4 @@
-# Strapped v0.1.2
+# Strapped v0.1.3
 
 This Node.js module is designed to be a simple API for programatically rendering Bootstrap 4 HTML user interfaces. 
 Outputs clean, formatted code using the [EZ HTML](https://github.com/om-mani-padme-hum/ezhtml.git) module, making 
@@ -24,7 +24,7 @@ helper methods, e.g. Page.div(), Page.alert(), Page.button(), etc.  As for how t
 learn but the curve should be very low.  Most elements default to the last 'Col' (Bootstrap column) created; however, there
 are several exceptions:
 
-* Head defaults as child of last Html element
+* Head defaults as child of last HTML element
 * Title defaults as child of last Head element
 * Meta defaults as child of last Head element
 * Link defaults as child of last Head element
@@ -38,7 +38,7 @@ Elements can also be added explicitly by instanciating the objects and appending
 other container elements, such as:
 
 ```javascript
-const html = new strapped.Html();
+const html = new strapped.HTML();
 
 html.append(new strapped.Head());
 html.append(new strapped.Body());
