@@ -62,7 +62,7 @@ const app = express();
 /** Create express path for root of web server '/' */
 app.get('/', (req, res, nex) => {
   /** Create new page */                           
-  const p = strapped.Page();
+  const p = new strapped.Page();
                                  
   /** Start content */
   p.html();
@@ -76,13 +76,13 @@ app.get('/', (req, res, nex) => {
   p.title().text('Example Site');
 
   /** Append required Bootstrap 4 JavaScript (you'll need to set up routes for these) */
-  p.script().src('/js/jquery.min.js');
-  p.script().src('/js/popper.min.js');
-  p.script().src('/js/bootstrap.min.js');
+  p.script().src('https://code.jquery.com/jquery-3.2.1.slim.min.js');
+  p.script().src('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js');
+  p.script().src('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js');
   
   /** Append required Bootstrap 4 CSS (you'll need to set up a route for this) */
-  p.link().rel('stylesheet').href('/css/bootstrap.min.css');
-  
+  p.link().rel('stylesheet').href('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
+
   /** Append body */
   p.body();
                                  
@@ -380,7 +380,7 @@ app.get('/', (req, res, nex) => {
   
   res.send(p.render());
 });
-
+  
 /** Start express listening */
 app.listen(3000, () => {
   console.log(`Express is listening on port 3000!`);
