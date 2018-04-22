@@ -1,4 +1,4 @@
-# Strapped v0.2.11
+# Strapped v0.2.12
 
 This Node.js module is designed to be a simple API for programatically rendering Bootstrap 4 HTML user interfaces. 
 Outputs clean, formatted code using the [EZ HTML](https://github.com/om-mani-padme-hum/ezhtml.git) module, making 
@@ -75,12 +75,12 @@ app.get('/', (req, res, nex) => {
   /** Append example title */
   p.title().text('Example Site');
 
-  /** Append required Bootstrap 4 JavaScript (you'll need to set up routes for these) */
+  /** Append required Bootstrap 4 JavaScript */
   p.script().src('https://code.jquery.com/jquery-3.2.1.slim.min.js');
   p.script().src('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js');
   p.script().src('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js');
   
-  /** Append required Bootstrap 4 CSS (you'll need to set up a route for this) */
+  /** Append required Bootstrap 4 CSS */
   p.link().rel('stylesheet').href('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
 
   /** Append body */
