@@ -187,14 +187,12 @@ app.get('/', (req, res, nex) => {
     p.card('accordian');
     
     p.cardHeader();
+    p.heading('cardHeader').rank(5).addClass('mb-0');
     
-    if ( i == 0 ) {
-      p.heading('cardHeader').rank(5).addClass('mb-0');
+    if ( i == 0 )
       p.anchor('heading').collapses(`#accordian-${i}`).text(`Accordian ${i + 1}`);
-    } else {
-      p.heading('cardHeader').rank(5).addClass('mb-0');
+    else
       p.anchor('heading').addClass('collapsed').collapses(`#accordian-${i}`).text(`Accordian ${i + 1}`);
-    }
     
     if ( i == 0 )
       p.collapse('card').addClass('show').id(`accordian-${i}`).attr('data-parent', `#accordian`);
