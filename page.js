@@ -1,5 +1,5 @@
 /** Require external modules */
-const strapped = require('strapped');
+const strapped = require('./index');
 const html = require('ezhtml');
 const octicons = require('octicons');
 const util = require('util');

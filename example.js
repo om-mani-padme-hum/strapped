@@ -1,60 +1,5 @@
-# Strapped v0.3.1
-
-This Node.js module is designed to be a simple API for programatically rendering Bootstrap 4 HTML user interfaces. 
-Outputs clean, formatted code using the [EZ HTML](https://github.com/om-mani-padme-hum/ezhtml.git) module, making 
-it easy to troubleshoot errors.
-
-## Current Status
-
-Highly functional, but still under development.  Currently have all HTML 5 elements plus Bootstrap 4 accordians, 
-alerts, badges, anchors, buttons, button checkboxes, button groups, button links, button radios, button toolbars, 
-cards, carousels, columns, collapsable divs, dropdowns, forms, headings, inputs and input sets, jumbotrons, list groups,
-modals, progress bars, selects, tables, and textareas.  For standard HTML 5 elements, see 
-[EZ HTML](https://github.com/om-mani-padme-hum/ezhtml.git) whose objects are passed through in the Strapped, unless 
-they are superseded by Bootstrap 4 components.
-
-In addition, there is a Page object which is a very convenient way to writing short hand web page pages.  That is what 
-is being used to draw the example below.  Support for some remaining elements will be added soon.
-
-## Principles of Operation
-
-There is an intuitive, yet slightly ambiguous operating principle behind this library.  It is generally expected
-that the Page object will be used to generate all content.  Elements are therefore added by using the defined 
-helper methods, e.g. Page.div(), Page.alert(), Page.button(), etc.  As for how these elements get nested, you'll have to
-learn but the curve should be very low.  Most elements default to the last 'Col' (Bootstrap column) created; however, there
-are several exceptions:
-
-* Head defaults as child of last HTML element
-* Title defaults as child of last Head element
-* Meta defaults as child of last Head element
-* Link defaults as child of last Head element
-* TableHeader defaults as child of last TableRow element
-* TableData defaults as child of last TableRow element
-* TableRow defaults as child of last TableBody element
-* TableHead, TableBody, TableFooter default as child of last Table element
-* etc...
-
-Elements can also be added explicitly by instanciating the objects and appending (or prepending) them as children to 
-other container elements, such as:
-
-```javascript
-const html = new strapped.HTML();
-
-html.append(new strapped.Head());
-html.append(new strapped.Body());
-
-html.last('head').append(new strapped.Title().text('My Example Site'));
-```
-
-The library is pretty straightforward and simple, yet powerful.  Feel free to dive in the code, or guess at the operating
-principles and examine the HTML output to verify if things worked as you expect.  Once this library has been fully tested,
-I intend to create a complete set of documentation of the API.
-
-## Usage Example
-
-```javascript
 const express = require('express');
-const strapped = require('strapped');
+const strapped = require('./index');
 
 /** Create express app */
 const app = express();
@@ -386,4 +331,3 @@ app.listen(3000, () => {
   console.log(`Express is listening on port 3000!`);
 });
 
-```
