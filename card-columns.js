@@ -11,9 +11,7 @@ class CardColumns extends html.Div {
    * Construct a new object and initialize.
    */
   constructor(data = {}) {
-    super(data);
-    
-    this.allowedContent(['Card']);
+    super(data);    
   }
   
   /**

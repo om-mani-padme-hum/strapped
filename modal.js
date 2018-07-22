@@ -13,7 +13,6 @@ class Modal extends html.Div {
   constructor(data = {}) {
     super(data);
     
-    this.allowedContent(['ModalHeader', 'ModalBody', 'ModalFooter']);
     this.middle(data.middle || false);
   }
   

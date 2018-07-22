@@ -12,9 +12,7 @@ class Card extends html.Div {
    */
   constructor(data = {}) {
     super(data);
-    
-    this.allowedContent(['CardImage', 'CardBody', 'CardHeader', 'CardFooter', 'Collapse', 'ListGroup']);
-    
+        
     this.background(data.background || '');
     this.border(data.border || '');
     this.color(data.color || '');

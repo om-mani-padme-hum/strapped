@@ -1,4 +1,4 @@
-# Strapped v0.3.2
+# Strapped v0.4.0
 
 This Node.js module is designed to be a simple API for programatically rendering Bootstrap 4 HTML user interfaces. 
 Outputs clean, formatted code using the [EZ HTML](https://github.com/om-mani-padme-hum/ezhtml.git) module, making 
@@ -91,22 +91,22 @@ app.get('/', (req, res, nex) => {
   /** Example headings */
   p.row();
   p.col();
-  p.heading().color('primary').rank(1).text('Bootstrap Heading');
+  p.h1().color('primary').text('Bootstrap Heading');
   p.row();
   p.col();
-  p.heading().color('secondary').rank(2).text('Bootstrap Heading');
+  p.h2().color('secondary').text('Bootstrap Heading');
   p.row();
   p.col();
-  p.heading().color('success').rank(3).text('Bootstrap Heading');
+  p.h3().color('success').text('Bootstrap Heading');
   p.row();
   p.col();
-  p.heading().color('danger').rank(4).text('Bootstrap Heading');
+  p.h4().color('danger').text('Bootstrap Heading');
   p.row();
   p.col();
-  p.heading().color('warning').rank(5).text('Bootstrap Heading');
+  p.h5().color('warning').text('Bootstrap Heading');
   p.row();
   p.col();
-  p.heading().color('info').rank(6).text('Bootstrap Heading');
+  p.h6().color('info').text('Bootstrap Heading');
   p.lineBreak();
   
   /** Example alerts */
@@ -170,7 +170,7 @@ app.get('/', (req, res, nex) => {
     p.card('cardDeck');
     p.cardImage().src('/images/example.svg');
     p.cardBody();
-    p.heading('cardBody').addClass('card-title').rank(5).text('Card Example');
+    p.h5('cardBody').addClass('card-title').text('Card Example');
     p.paragraph('cardBody').addClass('card-text').text(`Some quick example text to build on the card title and make up the bulk of the card's content`);
     p.buttonLink('cardBody').color(colors[i]).href('#').text('Go somewhere');
     p.cardFooter().text('Last updated 3 mins ago');
@@ -187,12 +187,12 @@ app.get('/', (req, res, nex) => {
     p.card('accordian');
     
     p.cardHeader();
-    p.heading('cardHeader').rank(5).addClass('mb-0');
+    p.h5('cardHeader').addClass('mb-0');
     
     if ( i == 0 )
-      p.anchor('heading').collapses(`#accordian-${i}`).text(`Accordian ${i + 1}`);
+      p.anchor('h5').collapses(`#accordian-${i}`).text(`Accordian ${i + 1}`);
     else
-      p.anchor('heading').addClass('collapsed').collapses(`#accordian-${i}`).text(`Accordian ${i + 1}`);
+      p.anchor('h5').addClass('collapsed').collapses(`#accordian-${i}`).text(`Accordian ${i + 1}`);
     
     if ( i == 0 )
       p.collapse('card').addClass('show').id(`accordian-${i}`).attr('data-parent', `#accordian`);
@@ -242,11 +242,11 @@ app.get('/', (req, res, nex) => {
   colors.forEach((color) => {
     p.button().color(color).text('Dropdown').togglesDropdown(true);
     p.dropdownMenu();
-    p.heading('dropdownMenu').rank(6).addClass('dropdown-header').text('Section 1');
+    p.h6('dropdownMenu').addClass('dropdown-header').text('Section 1');
     p.anchor('dropdownMenu').addClass(`dropdown-item`).href('#').text('Action');
     p.anchor('dropdownMenu').addClass(`dropdown-item`).href('#').text('Another Action');
     p.div('dropdownMenu').addClass('dropdown-divider');
-    p.heading('dropdownMenu').rank(6).addClass('dropdown-header').text('Section 2');
+    p.h6('dropdownMenu').addClass('dropdown-header').text('Section 2');
     p.anchor('dropdownMenu').addClass(`dropdown-item`).href('#').text('More Actions');
     p.anchor('dropdownMenu').addClass(`dropdown-item`).href('#').text('Last Action');
   });
@@ -256,7 +256,7 @@ app.get('/', (req, res, nex) => {
   /** Example standard form */
   p.row();
   p.col();
-  p.heading().color('primary').rank(2).text('Example Standard Form');
+  p.h2().color('primary').text('Example Standard Form');
   p.row();
   p.col().size(4).left(true);
   p.form().action('/quoting/test').method('GET');
@@ -285,7 +285,7 @@ app.get('/', (req, res, nex) => {
   /** Example horizontal form */
   p.row();
   p.col();
-  p.heading().color('primary').rank(2).text('Example Horizontal Form').addClass('pb-2');
+  p.h2().color('primary').text('Example Horizontal Form').addClass('pb-2');
   p.row();
   p.col().size(4).left(true);
   p.form().action('/quoting/test').method('GET');
@@ -315,7 +315,7 @@ app.get('/', (req, res, nex) => {
   /** Example inline form */
   p.row();
   p.col();
-  p.heading().color('primary').rank(2).text('Example Inline Form').addClass('pb-2');
+  p.h2().color('primary').text('Example Inline Form').addClass('pb-2');
   p.row();
   p.col();
   p.form().action('/quoting/test').method('GET').inline(true);
@@ -329,7 +329,7 @@ app.get('/', (req, res, nex) => {
   p.row();
   p.col().size(8);
   p.jumbotron();
-  p.heading('jumbotron').display(4).rank(1).text('Example Jumbotron');
+  p.h1('jumbotron').display(4).text('Example Jumbotron');
   p.paragraph('jumbotron').addClass('lead').text('This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.');
   p.horizontalRule('jumbotron');
   p.paragraph('jumbotron').text('It uses utility classes for typography and spacing to space content out within the larger container.');
@@ -358,7 +358,7 @@ app.get('/', (req, res, nex) => {
   p.button().color('danger').attr('data-toggle', 'modal').attr('data-target', '#modal').text('Launch Modal');
   p.modal().id('modal').middle(true);
   p.modalHeader();
-  p.heading('modalHeader').rank(5).addClass(`modal-title`).text('Hello Modal');
+  p.h5('modalHeader').addClass(`modal-title`).text('Hello Modal');
   p.button('modalHeader').addClass('close').attr('data-dismiss', 'modal').text('&times;');
   p.modalBody().text('This is an example modal box that might be used to confirm changes, or provide a sub-form for a main form.');
   p.modalFooter();

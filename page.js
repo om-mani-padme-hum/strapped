@@ -1405,14 +1405,114 @@ class Page extends html.Container {
   }
   
   /**
-   * Add new heading to page.
-   * @signature heading() Add new heading to last column
-   * @signature heading(string) Add new heading to last container type indicated by (string)
+   * Add new rank 1 heading to page.
+   * @signature h1() Add new rank 1 heading to last column
+   * @signature h1(string) Add new rank 1 heading to last container type indicated by (string)
    * @return This new heading for call chaining
    */
-  heading(arg1) {
+  h1(arg1) {
     /** Create new element */
-    const heading = new strapped.Heading();
+    const heading = new strapped.H1();
+    
+    /** Add to last container of indicated type */
+    if ( typeof arg1 == 'string' && arg1.length > 0 )
+      this.last(arg1).append(heading);
+    else
+      this.last('Col').append(heading);
+    
+    /** Allow for call chaining */
+    return heading;
+  }
+  
+  /**
+   * Add new rank 2 heading to page.
+   * @signature h2() Add new rank 2 heading to last column
+   * @signature h2(string) Add new rank 2 heading to last container type indicated by (string)
+   * @return This new heading for call chaining
+   */
+  h2(arg1) {
+    /** Create new element */
+    const heading = new strapped.H2();
+    
+    /** Add to last container of indicated type */
+    if ( typeof arg1 == 'string' && arg1.length > 0 )
+      this.last(arg1).append(heading);
+    else
+      this.last('Col').append(heading);
+    
+    /** Allow for call chaining */
+    return heading;
+  }
+  
+  /**
+   * Add new rank 3 heading to page.
+   * @signature h3() Add new rank 3 heading to last column
+   * @signature h3(string) Add new rank 3 heading to last container type indicated by (string)
+   * @return This new heading for call chaining
+   */
+  h3(arg1) {
+    /** Create new element */
+    const heading = new strapped.H3();
+    
+    /** Add to last container of indicated type */
+    if ( typeof arg1 == 'string' && arg1.length > 0 )
+      this.last(arg1).append(heading);
+    else
+      this.last('Col').append(heading);
+    
+    /** Allow for call chaining */
+    return heading;
+  }
+  
+  /**
+   * Add new rank 4 heading to page.
+   * @signature h4() Add new rank 4 heading to last column
+   * @signature h4(string) Add new rank 4 heading to last container type indicated by (string)
+   * @return This new heading for call chaining
+   */
+  h4(arg1) {
+    /** Create new element */
+    const heading = new strapped.H4();
+    
+    /** Add to last container of indicated type */
+    if ( typeof arg1 == 'string' && arg1.length > 0 )
+      this.last(arg1).append(heading);
+    else
+      this.last('Col').append(heading);
+    
+    /** Allow for call chaining */
+    return heading;
+  }
+  
+  /**
+   * Add new rank 5 heading to page.
+   * @signature h5() Add new rank 5 heading to last column
+   * @signature h5(string) Add new rank 5 heading to last container type indicated by (string)
+   * @return This new heading for call chaining
+   */
+  h5(arg1) {
+    /** Create new element */
+    const heading = new strapped.H5();
+    
+    /** Add to last container of indicated type */
+    if ( typeof arg1 == 'string' && arg1.length > 0 )
+      this.last(arg1).append(heading);
+    else
+      this.last('Col').append(heading);
+    
+    /** Allow for call chaining */
+    return heading;
+  }
+  
+  /**
+   * Add new rank 6 heading to page.
+   * @signature h6() Add new rank 6 heading to last column
+   * @signature h6(string) Add new rank 6 heading to last container type indicated by (string)
+   * @return This new heading for call chaining
+   */
+  h6(arg1) {
+    /** Create new element */
+    const heading = new strapped.H6();
     
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )

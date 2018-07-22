@@ -6,7 +6,7 @@ const html = require('ezhtml');
  * @author Rich Lowe
  * @copyright 2018 Rich Lowe
  */
-class DropdownHeader extends html.Heading {
+class DropdownHeader extends html.H6 {
   /**
    * Construct a new object and initialize.
    */
@@ -20,7 +20,7 @@ class DropdownHeader extends html.Heading {
    * @return The rendered HTML
    */
   render(indent) {
-    this.rank(6).addClass(`dropdown-header`);
+    this.addClass(`dropdown-header`);
             
     return super.render(indent);
   }

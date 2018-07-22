@@ -195,6 +195,7 @@ class TextArea extends html.TextArea {
     const textArea = new html.TextArea();
     
     textArea.attributes(this.attributes());
+    textArea.content(this.content());
     textArea.classes(this.classes());
     textArea.id(this.id());
     textArea.style(this.style());

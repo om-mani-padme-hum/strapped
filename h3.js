@@ -2,11 +2,11 @@
 const html = require('ezhtml');
 
 /**
- * Class for rendering Bootstrap 4 headings.
+ * Class for rendering Bootstrap 4 rank 3 headings.
  * @author Rich Lowe
  * @copyright 2018 Rich Lowe
  */
-class Heading extends html.Heading {
+class H3 extends html.H3 {
   /**
    * Construct a new object and initialize.
    */
@@ -14,7 +14,7 @@ class Heading extends html.Heading {
     super(data);
     
     this.color(data.color || '');
-    this.display(data.display || 0);
+    this.display(data.display || false);
   }
   
   /**
@@ -34,16 +34,16 @@ class Heading extends html.Heading {
     
     /** Handle errors */
     else
-      throw new TypeError(`Heading.color(): Invalid signature (${typeof arg1}).`);
+      throw new TypeError(`H3.color(): Invalid signature (${typeof arg1}).`);
     
     /** Allow for call chaining */
     return this;
   }
   
   /**
-   * Display super-size getter/setter.
-   * @signature display() Get the display super-size
-   * @signature display(number) Set the color as (number)
+   * Display super-size boolean getter/setter.
+   * @signature display() Get the display super-size boolean
+   * @signature display(boolean) Set the display super-size boolean as (boolean)
    * @return This object for call chaining
    */
   display(arg1) {
@@ -52,12 +52,12 @@ class Heading extends html.Heading {
       return this._display;
     
     /** Setter */
-    else if ( typeof arg1 == 'number' )
+    else if ( typeof arg1 == 'boolean' )
       this._display = arg1; 
     
     /** Handle errors */
     else
-      throw new TypeError(`Heading.display(): Invalid signature (${typeof arg1}).`);
+      throw new TypeError(`H3.display(): Invalid signature (${typeof arg1}).`);
     
     /** Allow for call chaining */
     return this;
@@ -75,7 +75,7 @@ class Heading extends html.Heading {
     
     /** Handle errors */
     else
-      throw new TypeError(`Heading.text(): Invalid signature (${typeof arg1}).`);
+      throw new TypeError(`H3.text(): Invalid signature (${typeof arg1}).`);
 
     /** Allow for call chaining */
     return this;
@@ -90,11 +90,11 @@ class Heading extends html.Heading {
     if ( this.color().length > 0 )
       this.addClass(`text-${this.color()}`);
     
-    if ( this.display() > 0 )
-      this.addClass(`display-${this.display()}`);
+    if ( this.display() )
+      this.addClass(`display-3`);
     
     return super.render(indent);
   }
 }
 
-module.exports.Heading = Heading;
+module.exports.H3 = H3;

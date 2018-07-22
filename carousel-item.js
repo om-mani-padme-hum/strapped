@@ -130,7 +130,7 @@ class CarouselItem extends html.Div {
       const caption = new html.Div().addClass('carousel-caption d-none d-md-block');
       
       if ( this.caption().length > 0 )
-        caption.append(new html.Heading().rank(5).append(new html.Text().text(this.caption())));
+        caption.append(new html.H5().append(new html.Text().text(this.caption())));
       
       if ( this.description().length > 0 )
         caption.append(new html.Paragraph().append(new html.Text().text(this.description())));

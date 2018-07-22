@@ -12,8 +12,6 @@ class CardGroup extends html.Div {
    */
   constructor(data = {}) {
     super(data);
-    
-    this.allowedContent(['Card']);
   }
   
   /**
