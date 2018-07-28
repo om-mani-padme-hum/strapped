@@ -209,7 +209,7 @@ class Select extends html.Select {
     select.size(this.size());
     
     if ( this.controlSize().length > 0 )
-      select.addClass(`form-control-${this.size()}`);
+      select.addClass(`form-control-${this.controlSize()}`);
     else
       select.addClass(`form-control`);
     
