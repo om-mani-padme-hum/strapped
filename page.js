@@ -1859,8 +1859,8 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(lineBreak);
-    else if ( this.last('Body') )
-      this.last('Body').append(lineBreak);
+    else if ( this.last('Col') )
+      this.last('Col').append(lineBreak);
     else
       this.append(lineBreak);
     

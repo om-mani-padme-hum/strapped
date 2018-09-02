@@ -60,7 +60,7 @@ const strapped = require('strapped');
 const app = express();
 
 /** Create express path for root of web server '/' */
-app.get('/', (req, res, nex) => {
+app.get('/', (req, res, next) => {
   /** Create new page */                           
   const p = new strapped.Page();
                                  
