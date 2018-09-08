@@ -1,6 +1,6 @@
 {
   "name": "strapped",
-  "version": "0.5.5",
+  "version": "0.5.6",
   "description": "Node.js Bootstrap Implementation Using EZ HTML",
   "main": "index.js",
   "scripts": {
