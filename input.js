@@ -239,7 +239,7 @@ class Input extends html.Input {
   render(indent) {
     const div = new html.Div();
     
-    if ( this.type() == 'checkbox' || this.type() == 'radio' )
+    if ( ( this.type() == 'checkbox' || this.type() == 'radio' ) && !this.horizontal() )
       div.addClass('form-check');
     else
       div.addClass('form-group');
@@ -336,6 +336,9 @@ class Input extends html.Input {
         
         if ( this.inputOffset() > 0 )
           div2.addClass(`offset-${this.inputOffset()}`);
+        
+        if ( ( this.type() == 'checkbox' || this.type() == 'radio' ) && this.horizontal() )
+          div2.addClass(`form-check`);
       }
     } else {
       if ( this.before().length > 0 || this.after().length > 0 )
