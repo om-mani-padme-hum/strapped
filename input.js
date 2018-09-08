@@ -320,8 +320,12 @@ class Input extends html.Input {
     else
       input.addClass(`form-control`);
     
-    if ( this.type() == 'checkbox' || this.type() == 'radio' )
-      input.addClass('form-check-input');
+    if ( this.type() == 'checkbox' || this.type() == 'radio' ) {
+      input.addClass(`form-check-input`);
+      
+      if ( this.horizontal() )
+        input.addClass(`mt-1`).style(`height: 1rem;`);
+    }
     
     if ( this.horizontal() && this.inputCols() > 0 ) {
       if ( this.before().length > 0 || this.after().length > 0 ) {
@@ -338,7 +342,7 @@ class Input extends html.Input {
           div2.addClass(`offset-${this.inputOffset()}`);
         
         if ( ( this.type() == 'checkbox' || this.type() == 'radio' ) && this.horizontal() )
-          div2.addClass(`form-check`);
+          div2.addClass(`form-check ml-3`);
       }
     } else {
       if ( this.before().length > 0 || this.after().length > 0 )
