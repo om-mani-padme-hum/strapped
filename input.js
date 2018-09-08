@@ -250,7 +250,7 @@ class Input extends html.Input {
     if ( !this.horizontal() && this.cols() > 0 )
       div.addClass(`col-${this.cols()}`);
     
-    if ( this.label().length > 0 && this.type() != 'checkbox' && this.type() != 'radio' ) {
+    if ( this.label().length > 0 && ( ( this.type() != 'checkbox' && this.type() != 'radio' ) || this.horizontal() ) ) {
       const label = new html.Label();
       
       if ( this.controlSize().length > 0 )
@@ -347,7 +347,7 @@ class Input extends html.Input {
     if ( this.after().length > 0 )
       inputGroup.append(new html.Div().addClass('input-group-append').append(new html.Span().addClass('input-group-text').text(this.after())));
     
-    if ( this.label().length > 0 && ( this.type() == 'checkbox' || this.type() == 'radio' ) ) {
+    if ( this.label().length > 0 && ( this.type() == 'checkbox' || this.type() == 'radio' ) && !this.horizontal() ) {
       const label = new html.Label();
       
       if ( this.controlSize().length > 0 )
