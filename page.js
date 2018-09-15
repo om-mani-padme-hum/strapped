@@ -1809,14 +1809,18 @@ class Page extends html.Container {
    * @signature lastParent(string) Get the last parent item of type (string) in contents
    * @return The last parent item of type (string) in contents
    */
-  lastParent(arg1) {
+  lastParent(arg1, count = 1) {
     /** Recursive algorithm for finding parent elements */
     const findParent = (item, type) => {      
-      if ( !item.parent() )
+      if ( !item.parent() ) {
         return null;
-      else if ( typeof item.parent() == 'object' && item.parent().constructor && item.parent().constructor.name.toLowerCase() == arg1.toLowerCase() )
-        return item.parent();
+      } else if ( typeof item.parent() == 'object' && item.parent().constructor && item.parent().constructor.name.toLowerCase() == arg1.toLowerCase() ) {
+        count--;
       
+        if ( count == 0 )
+          return item.parent();
+      }
+    
       return findParent(item.parent(), type);
     };
     
