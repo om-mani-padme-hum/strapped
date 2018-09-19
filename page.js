@@ -146,7 +146,6 @@ class Page extends html.Container {
         console.log(err.stack());
     } else {
       /** For generic Errors, generate basic error alert */
-      col.size(6);
       alert.color('danger').strong(`${octicons.alert.toSVG({ class: 'mr-2' })} Error:`).text(err.message);
 
       /** These are not designed to be user facing errors, make sure we've saved the stack in the error file */
