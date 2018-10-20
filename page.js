@@ -579,8 +579,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(canvas);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(canvas);
+    else
+      this.last('Body').append(canvas);
     
     /** Allow for call chaining */
     return canvas;
@@ -1865,7 +1867,7 @@ class Page extends html.Container {
     else if ( this.last('Col') )
       this.last('Col').append(lineBreak);
     else
-      this.append(lineBreak);
+      this.last('Body').append(lineBreak);
     
     /** Allow for call chaining */
     return lineBreak;
