@@ -236,9 +236,9 @@ app.get('/', (req, res, next) => {
   p.h2().color('primary').text('Example Horizontal Form').addClass('pb-2');
   p.row();
   p.col().size(4).left(true);
-  p.form().action('/quoting/test').method('GET');
-  p.input().id('first-name').name('first-name').label('First Name:').type('text').labelCols(4).inputCols(6).horizontal(true);
-  p.input().id('last-name').name('last-name').label('Last Name:').type('text').labelCols(4).inputCols(6).horizontal(true);
+  p.form().action('/').method('GET');
+  p.input().id('firstName').name('firstName').label('First Name:').type('text').labelCols(4).inputCols(6).horizontal(true);
+  p.input().id('lastName').name('lastName').label('Last Name:').type('text').labelCols(4).inputCols(6).horizontal(true);
   p.input().id('email').name('email').label('Email:').type('email').labelCols(4).inputCols(8).horizontal(true);
   p.input().id('tel').name('tel').label('Telephone:').type('tel').before('+1').labelCols(4).inputCols(6).horizontal(true);
   p.row('form');
