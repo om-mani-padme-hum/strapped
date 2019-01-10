@@ -245,7 +245,7 @@ app.get('/', (req, res, next) => {
   p.col().size(4).text('Sex:').addClass('col-form-label pt-0');
   p.col().size(8);
   p.inputSet('col');
-  p.input('inputSet').id('male').name('sex').type('radio').label('Male');
+  p.input('inputSet').id('male').name('sex').type('radio').label('Male').selected(true);
   p.input('inputSet').id('female').name('sex').type('radio').label('Female');
   p.select().id('department').name('department').label('Department:').labelCols(4).inputCols(6).horizontal(true);
   p.option().value('engineering').text('Engineering');
