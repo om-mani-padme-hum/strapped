@@ -1,5 +1,5 @@
 const express = require('express');
-const strapped = require('./index');
+const strapped = require('strapped');
 
 /** Create express app */
 const app = express();
@@ -91,6 +91,7 @@ app.get('/', (req, res, next) => {
   p.button().color('info').text('Button');
   p.badge('button').color('light').text('6');
   p.lineBreak();
+  p.lineBreak();
   
   /** Example button toolbar with button groups including button radios and checkboxes */  
   p.row();
@@ -113,7 +114,7 @@ app.get('/', (req, res, next) => {
     
   for ( let i = 0; i < 6; i += 2 ) {
     p.card('cardDeck');
-    p.cardImage().src('/images/example.svg');
+    p.cardImage().src('https://via.placeholder.com/250?text=Example+Card');
     p.cardBody();
     p.h5('cardBody').addClass('card-title').text('Card Example');
     p.paragraph('cardBody').addClass('card-text').text(`Some quick example text to build on the card title and make up the bulk of the card's content`);
@@ -154,9 +155,9 @@ app.get('/', (req, res, next) => {
   p.row();
   p.col(8).size(8);
   p.carousel().id('carousel').controls(true).indicators(true);
-  p.carouselItem().src('/images/example2.svg').alt('First Slide').caption('First Slide').description('This is the first slide description');
-  p.carouselItem().src('/images/example2.svg').alt('Second Slide').caption('Second Slide').description('This is the second slide description');
-  p.carouselItem().src('/images/example2.svg').alt('Third Slide').caption('Third Slide').description('This is the third slide description');
+  p.carouselItem().src('https://via.placeholder.com/800x400?text=Example+Carousel').alt('First Slide').caption('First Slide').description('This is the first slide description');
+  p.carouselItem().src('https://via.placeholder.com/800x400?text=Example+Carousel').alt('Second Slide').caption('Second Slide').description('This is the second slide description');
+  p.carouselItem().src('https://via.placeholder.com/800x400?text=Example+Carousel').alt('Third Slide').caption('Third Slide').description('This is the third slide description');
   p.lineBreak();
   
   /** Examples row with split cols */
@@ -179,6 +180,7 @@ app.get('/', (req, res, next) => {
   p.cardBody();
   p.paragraph('cardBody').addClass('card-text').text('Some quick example text to provide sample content for this column split card body.');
   p.lineBreak();
+  p.lineBreak();
   
   /** Example dropdowns */
   p.row();
@@ -196,6 +198,7 @@ app.get('/', (req, res, next) => {
     p.anchor('dropdownMenu').addClass(`dropdown-item`).href('#').text('Last Action');
   });
 
+  p.lineBreak();
   p.lineBreak();
   
   /** Example standard form */
@@ -233,20 +236,21 @@ app.get('/', (req, res, next) => {
   p.h2().color('primary').text('Example Horizontal Form').addClass('pb-2');
   p.row();
   p.col().size(4).left(true);
-  p.form().action('/quoting/test').method('GET');
-  p.input().id('first-name').name('first-name').label('First Name:').type('text').labelCols(4).inputCols(6).horizontal(true);
-  p.input().id('last-name').name('last-name').label('Last Name:').type('text').labelCols(4).inputCols(6).horizontal(true);
+  p.form().action('/').method('GET');
+  p.input().id('firstName').name('firstName').label('First Name:').type('text').labelCols(4).inputCols(6).horizontal(true);
+  p.input().id('lastName').name('lastName').label('Last Name:').type('text').labelCols(4).inputCols(6).horizontal(true);
   p.input().id('email').name('email').label('Email:').type('email').labelCols(4).inputCols(8).horizontal(true);
   p.input().id('tel').name('tel').label('Telephone:').type('tel').before('+1').labelCols(4).inputCols(6).horizontal(true);
   p.row('form');
   p.col().size(4).text('Sex:').addClass('col-form-label pt-0');
   p.col().size(8);
   p.inputSet('col');
-  p.input('inputSet').id('male').name('sex').type('radio').label('Male');
+  p.input('inputSet').id('male').name('sex').type('radio').label('Male').checked(true);
   p.input('inputSet').id('female').name('sex').type('radio').label('Female');
   p.select().id('department').name('department').label('Department:').labelCols(4).inputCols(6).horizontal(true);
+  p.option().value('').text('Select Department');
   p.option().value('engineering').text('Engineering');
-  p.option().value('quality').text('Quality').selected(true);
+  p.option().value('quality').text('Quality');
   p.option().value('materials').text('Materials');
   p.option().value('manufacturing').text('Manufacturing');
   p.row('form');
@@ -330,4 +334,3 @@ app.get('/', (req, res, next) => {
 app.listen(4000, () => {
   console.log(`Express is listening on port 4000!`);
 });
-
