@@ -13,6 +13,8 @@ class ButtonGroup extends html.Div {
   constructor(data = {}) {
     super(data);
     
+    this.init(data);
+    
     this.size(data.size || '');
     this.toggle(data.toggle || false);
     this.vertical(data.vertical || false);

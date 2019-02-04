@@ -20,7 +20,7 @@ class Page extends html.Container {
   constructor(data= {}) {
     super(data);
     
-    this.content([]);
+    this.init(data);
   }
   
   /**

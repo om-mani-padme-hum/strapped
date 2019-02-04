@@ -13,6 +13,8 @@ class Table extends html.Table {
   constructor(data = {}) {
     super(data);
     
+    this.init(data);
+    
     this.bordered(data.bordered || false);
     this.dark(data.dark || false);
     this.hoverable(data.hoverable || false);

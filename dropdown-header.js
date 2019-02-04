@@ -12,6 +12,8 @@ class DropdownHeader extends html.H6 {
    */
   constructor(data = {}) {
     super(data);
+    
+    this.init(data);
   }
 
   /**

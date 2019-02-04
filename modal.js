@@ -13,6 +13,8 @@ class Modal extends html.Div {
   constructor(data = {}) {
     super(data);
     
+    this.init(data);
+    
     this.middle(data.middle || false);
   }
   

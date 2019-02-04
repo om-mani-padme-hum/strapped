@@ -13,6 +13,8 @@ class Anchor extends html.Anchor {
   constructor(data = {}) {
     super(data);
     
+    this.init(data);
+    
     this.collapses(data.collapses || '');
     this.color(data.color || '');
   }

@@ -13,6 +13,8 @@ class Input extends html.Input {
   constructor(data = {}) {
     super(data);
     
+    this.init(data);
+    
     this.after(data.after || '');
     this.before(data.before || '');
     this.cols(data.cols || 0);

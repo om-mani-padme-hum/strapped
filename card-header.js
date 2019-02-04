@@ -12,6 +12,8 @@ class CardHeader extends html.Div {
    */
   constructor(data = {}) {
     super(data);
+    
+    this.init(data);
         
     this.background(data.background || '');
     this.border(data.border || '');

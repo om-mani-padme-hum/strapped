@@ -13,6 +13,8 @@ class CarouselItem extends html.Div {
   constructor(data = {}) {
     super(data);
     
+    this.init(data);
+    
     this.alt(data.alt || '');
     this.caption(data.caption || '');
     this.description(data.description || '');

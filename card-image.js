@@ -13,6 +13,8 @@ class CardImage extends html.Image {
   constructor(data = {}) {
     super(data);
     
+    this.init(data);
+    
     this.bottom(data.bottom || false);
   }
   

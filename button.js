@@ -13,6 +13,8 @@ class Button extends html.Button {
   constructor(data = {}) {
     super(data);
     
+    this.init(data);
+    
     this.active(data.active || false);
     this.block(data.block || false);
     this.collapses(data.collapses || '');

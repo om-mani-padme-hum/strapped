@@ -13,6 +13,8 @@ class H5 extends html.H5 {
   constructor(data = {}) {
     super(data);
     
+    this.init(data);
+    
     this.color(data.color || '');
     this.display(data.display || false);
   }

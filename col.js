@@ -13,6 +13,8 @@ class Col extends html.Div {
   constructor(data = {}) {
     super(data);
     
+    this.init(data);
+    
     this.break(data.break || '');
     this.bottom(data.bottom || false);
     this.middle(data.middle || false);

@@ -13,6 +13,8 @@ class H3 extends html.H3 {
   constructor(data = {}) {
     super(data);
     
+    this.init(data);
+    
     this.color(data.color || '');
     this.display(data.display || false);
   }

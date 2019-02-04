@@ -13,6 +13,8 @@ class H1 extends html.H1 {
   constructor(data = {}) {
     super(data);
     
+    this.init(data);
+    
     this.color(data.color || '');
     this.display(data.display || false);
   }

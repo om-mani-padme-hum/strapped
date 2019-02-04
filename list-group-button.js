@@ -13,6 +13,8 @@ class ListGroupButton extends html.Button {
   constructor(data = {}) {
     super(data);
     
+    this.init(data);
+    
     this.active(data.active || false);
     this.color(data.color || '');
   }

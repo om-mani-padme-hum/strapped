@@ -13,6 +13,8 @@ class TextArea extends html.TextArea {
   constructor(data = {}) {
     super(data);
     
+    this.init(data);
+    
     this.cols(data.cols || 0);
     this.controlSize(data.controlSize || '');
     this.horizontal(data.horizontal || false);

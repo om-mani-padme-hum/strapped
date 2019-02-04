@@ -12,6 +12,8 @@ class RowBreak extends html.Div {
    */
   constructor(data = {}) {
     super(data);
+    
+    this.init(data);
   }
   
   /**

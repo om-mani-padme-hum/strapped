@@ -13,6 +13,8 @@ class TableHead extends html.TableHead {
   constructor(data = {}) {
     super(data);
     
+    this.init(data);
+    
     this.light(data.light || false);
   }
   

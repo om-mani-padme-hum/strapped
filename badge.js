@@ -13,6 +13,8 @@ class Badge extends html.Span {
   constructor(data = {}) {
     super(data);
     
+    this.init(data);
+    
     this.color(data.color || 'primary');
     this.pill(data.pill || false);
   }

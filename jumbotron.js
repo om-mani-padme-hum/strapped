@@ -13,6 +13,8 @@ class Jumbotron extends html.Div {
   constructor(data = {}) {
     super(data);
     
+    this.init(data);
+    
     this.fluid(data.fluid || false);
   }
   

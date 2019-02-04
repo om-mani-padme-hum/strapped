@@ -13,6 +13,8 @@ class ButtonLink extends html.Anchor {
   constructor(data = {}) {
     super(data);
     
+    this.init(data);
+    
     this.active(data.active || false);
     this.block(data.block || false);
     this.disabled(data.disabled || false);

@@ -13,6 +13,8 @@ class Form extends html.Form {
   constructor(data = {}) {
     super(data);
     
+    this.init(data);
+    
     this.inline(data.inline || false);
   }
 

@@ -13,6 +13,8 @@ class ButtonCheckbox extends html.Label {
   constructor(data = {}) {
     super(data);
     
+    this.init(data);
+    
     this.active(data.active || false);
     this.block(data.block || false);
     this.color(data.color || 'dark');

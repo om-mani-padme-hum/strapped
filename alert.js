@@ -13,6 +13,8 @@ class Alert extends html.Div {
   constructor(data = {}) {
     super(data);
     
+    this.init(data);
+    
     this.color(data.color || 'primary');
     this.dismissable(data.dismissable || false);
   }

@@ -13,6 +13,8 @@ class ListGroupItem extends html.ListItem {
   constructor(data = {}) {
     super(data);
     
+    this.init(data);
+    
     this.active(data.active || false);
     this.color(data.color || '');
     this.disabled(data.disabled || false);

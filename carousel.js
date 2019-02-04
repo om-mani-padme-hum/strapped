@@ -12,6 +12,8 @@ class Carousel extends html.ContainerElement {
    */
   constructor(data = {}) {
     super(data);
+    
+    this.init(data);
 
     this.controls(data.controls || false);
     this.indicators(data.indicators || false);

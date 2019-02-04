@@ -13,6 +13,8 @@ class H2 extends html.H2 {
   constructor(data = {}) {
     super(data);
     
+    this.init(data);
+    
     this.color(data.color || '');
     this.display(data.display || false);
   }

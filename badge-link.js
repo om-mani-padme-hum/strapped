@@ -13,6 +13,8 @@ class BadgeLink extends html.Anchor {
   constructor(data = {}) {
     super(data);
     
+    this.init(data);
+    
     this.color(data.color || 'primary');
     this.pill(data.pill || false);
   }

@@ -13,6 +13,8 @@ class Select extends html.Select {
   constructor(data = {}) {
     super(data);
     
+    this.init(data);
+    
     this.cols(data.cols || 0);
     this.controlSize(data.controlSize || '');
     this.horizontal(data.horizontal || false);

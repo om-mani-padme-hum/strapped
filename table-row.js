@@ -13,6 +13,8 @@ class TableRow extends html.TableRow {
   constructor(data = {}) {
     super(data);
     
+    this.init(data);
+    
     this.color(data.color || '');
   }
   

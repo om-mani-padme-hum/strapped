@@ -12,6 +12,8 @@ class DropdownItem extends html.Anchor {
    */
   constructor(data = {}) {
     super(data);
+    
+    this.init(data);
   }
 
   /**

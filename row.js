@@ -13,6 +13,8 @@ class Row extends html.Div {
   constructor(data = {}) {
     super(data);
     
+    this.init(data);
+    
     this.bottom(data.bottom || false);
     this.center(data.center || true);
     this.left(data.left || false);

@@ -13,6 +13,8 @@ class H4 extends html.H4 {
   constructor(data = {}) {
     super(data);
     
+    this.init(data);
+    
     this.color(data.color || '');
     this.display(data.display || false);
   }

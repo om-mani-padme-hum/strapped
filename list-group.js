@@ -13,6 +13,8 @@ class ListGroup extends html.UnorderedList {
   constructor(data = {}) {
     super(data);
     
+    this.init(data);
+    
     this.flush(data.flush || false);
     this.tablist(data.tablist || false);
   }
