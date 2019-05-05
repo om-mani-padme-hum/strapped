@@ -28,7 +28,7 @@
     }
   },
   "dependencies": {
-    "ezhtml": "^1.5.1",
+    "ezhtml": "^1.5.2",
     "octicons": "^7.4.0"
   },
   "devDependencies": {
