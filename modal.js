@@ -71,7 +71,7 @@ class Modal extends html.Div {
    * @return The rendered HTML
    */
   render(indent) {
-    if ( [`sm`, `lg`, `xl`, ``].includes(this.size()) )
+    if ( ![`sm`, `lg`, `xl`, ``].includes(this.size()) )
       throw new RangeError(`Modal.render(): Invalid size, must be 'sm', 'lg', or 'xl' if set.`);
     
     const div = new html.Div().addClass(`modal fade`).attr('tabindex', '-1').attr('role', 'dialog').id(this.id());
