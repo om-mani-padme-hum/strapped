@@ -124,11 +124,11 @@ class Modal extends html.Div {
     const div3 = new html.Div();
     
     if ( this.small() )
-      div.addClass(`modal-sm`);
+      div2.addClass(`modal-sm`);
     else if ( this.large() )
-      div.addClass(`modal-lg`);
+      div2.addClass(`modal-lg`);
     else if ( this.xlarge() )
-      div.addClass(`modal-xl`);
+      div2.addClass(`modal-xl`);
     
     if ( this.middle() )
       div2.addClass(`modal-dialog-centered`);
