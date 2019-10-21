@@ -181,7 +181,7 @@ class Select extends html.Select {
       const label = new html.Label();
       
       if ( this.controlSize().length > 0 )
-        label.addClass(`col-form-label-${this.size()}`);
+        label.addClass(`col-form-label-${this.controlSize()}`);
       
       if ( this.horizontal() && this.labelCols() > 0 )
         label.addClass(`col-${this.labelCols()}`);

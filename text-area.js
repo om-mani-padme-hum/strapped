@@ -181,7 +181,7 @@ class TextArea extends html.TextArea {
       const label = new html.Label();
       
       if ( this.controlSize().length > 0 )
-        label.addClass(`col-form-label-${this.size()}`);
+        label.addClass(`col-form-label-${this.controlSize()}`);
       
       if ( this.horizontal() && this.labelCols() > 0 )
         label.addClass(`col-${this.labelCols()}`);
@@ -215,7 +215,7 @@ class TextArea extends html.TextArea {
     textArea.wrap(this.wrap());
     
     if ( this.controlSize().length > 0 )
-      textArea.addClass(`form-control-${this.size()}`);
+      textArea.addClass(`form-control-${this.controlSize()}`);
     else
       textArea.addClass(`form-control`);
     

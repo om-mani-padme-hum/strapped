@@ -318,7 +318,7 @@ class Input extends html.Input {
     input.width(this.width());
     
     if ( this.controlSize().length > 0 )
-      input.addClass(`form-control-${this.size()}`);
+      input.addClass(`form-control-${this.controlSize()}`);
     else
       input.addClass(`form-control`);
     
@@ -360,7 +360,7 @@ class Input extends html.Input {
       const label = new html.Label();
       
       if ( this.controlSize().length > 0 )
-        label.addClass(`col-form-label-${this.size()}`);
+        label.addClass(`col-form-label-${this.controlSize()}`);
       
       label.addClass('form-check-label');
       

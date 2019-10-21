@@ -1,4 +1,4 @@
-# Strapped v0.7.3
+# Strapped v0.7.4
 
 This Node.js module is designed to be a simple API for programatically rendering Bootstrap 4 HTML user interfaces. 
 Outputs clean, formatted code using the [EZ HTML](https://github.com/om-mani-padme-hum/ezhtml.git) module, making 
