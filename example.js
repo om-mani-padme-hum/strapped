@@ -1,5 +1,5 @@
 const express = require('express');
-const strapped = require('strapped');
+const strapped = require('./index');
 
 /** Create express app */
 const app = express();
