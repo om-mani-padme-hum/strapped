@@ -29,10 +29,10 @@
     }
   },
   "dependencies": {
-    "ezhtml": "^2.0.0",
+    "ezhtml": "^2.0.1",
     "octicons": "^7.4.0"
   },
   "devDependencies": {
-    "express": "^4.16.4"
+    "express": "^4.17.1"
   }
 }
