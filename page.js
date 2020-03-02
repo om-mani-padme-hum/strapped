@@ -154,7 +154,6 @@ class Page extends html.Container {
 
     row.append(col);
     col.append(alert);
-    col.append(new strapped.LineBreak());
 
     /** Add to last container of indicated type */
     if ( typeof lastContainer == 'string' && lastContainer.length > 0 )
