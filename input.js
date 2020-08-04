@@ -319,7 +319,7 @@ class Input extends html.Input {
     
     if ( this.controlSize().length > 0 )
       input.addClass(`form-control-${this.controlSize()}`);
-    else
+    else if ( input.type() != `checkbox` && input.type() != `radio` )
       input.addClass(`form-control`);
     
     if ( this.type() == 'checkbox' || this.type() == 'radio' ) {
