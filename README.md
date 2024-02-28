@@ -1,4 +1,4 @@
-# Strapped v0.7.9
+# Strapped v1.0.0
 
 This Node.js module is designed to be a simple API for programatically rendering Bootstrap 4 HTML user interfaces. 
 Outputs clean, formatted code using the [EZ HTML](https://github.com/om-mani-padme-hum/ezhtml.git) module, making 
@@ -38,6 +38,11 @@ are several exceptions:
 * TableHead, TableBody, TableFooter default as child of last Table element
 * etc...
 
+You can also customize the container that a given element will be nested in by passing as the argument the name of the element 
+tag you want to nest in, i.e. p.row('form') will nest a row element in the most recent form element.
+
+If no default is found, and no argument was passed for customized nesting, it will be attached to the root node.
+
 Elements can also be added explicitly by instanciating the objects and appending (or prepending) them as children to 
 other container elements, such as:
 
@@ -51,8 +56,7 @@ html.last('head').append(new strapped.Title().text('My Example Site'));
 ```
 
 The library is pretty straightforward and simple, yet powerful.  Feel free to dive in the code, or guess at the operating
-principles and examine the HTML output to verify if things worked as you expect.  Once this library has been fully tested,
-I intend to create a complete set of documentation of the API.
+principles and examine the HTML output to verify if things worked as you expect.
 
 ## Usage Example
 

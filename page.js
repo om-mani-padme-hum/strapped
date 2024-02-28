@@ -37,8 +37,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(abbreviation);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(abbreviation);
+    else
+      this.append(abbreviation);
     
     /** Allow for call chaining */
     return abbreviation;
@@ -58,8 +60,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(accordian);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(accordian);
+    else
+      this.append(accordian);
     
     /** Allow for call chaining */
     return accordian;
@@ -79,8 +83,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(address);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(address);
+    else
+      this.append(address);
     
     /** Allow for call chaining */
     return address;
@@ -100,8 +106,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(alert);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(alert);
+    else
+      this.append(alert);
     
     /** Allow for call chaining */
     return alert;
@@ -158,7 +166,7 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof lastContainer == 'string' && lastContainer.length > 0 )
       this.last(lastContainer).append(row);
-    else
+    else if ( this.last('Col') )
       this.last('Body').append(row);
 
     /** Allow for call chaining */
@@ -179,8 +187,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(anchor);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(anchor);
+    else
+      this.append(anchor);
     
     /** Allow for call chaining */
     return anchor;
@@ -200,8 +210,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(area);
-    else
+    else if ( this.last('Col') )
       this.last('Map').append(area);
+    else
+      this.append(area);
     
     /** Allow for call chaining */
     return area;
@@ -221,8 +233,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(article);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(article);
+    else
+      this.append(article);
     
     /** Allow for call chaining */
     return article;
@@ -242,8 +256,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(aside);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(aside);
+    else
+      this.append(aside);
     
     /** Allow for call chaining */
     return aside;
@@ -263,8 +279,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(audio);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(audio);
+    else
+      this.append(audio);
     
     /** Allow for call chaining */
     return audio;
@@ -284,8 +302,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(base);
-    else
+    else if ( this.last('Col') )
       this.last('Head').append(base);
+    else
+      this.append(base);
     
     /** Allow for call chaining */
     return base;
@@ -305,8 +325,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(badge);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(badge);
+    else
+      this.append(badge);
     
     /** Allow for call chaining */
     return badge;
@@ -326,8 +348,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(badgeLink);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(badgeLink);
+    else
+      this.append(badgeLink);
     
     /** Allow for call chaining */
     return badgeLink;
@@ -347,8 +371,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(bidirectionalIsolation);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(bidirectionalIsolation);
+    else
+      this.append(bidirectionalIsolation);
     
     /** Allow for call chaining */
     return bidirectionalIsolation;
@@ -368,8 +394,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(bidirectionalOverride);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(bidirectionalOverride);
+    else
+      this.append(bidirectionalOverride);
     
     /** Allow for call chaining */
     return bidirectionalOverride;
@@ -389,8 +417,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(blockquote);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(blockquote);
+    else
+      this.append(blockquote);
     
     /** Allow for call chaining */
     return blockquote;
@@ -410,8 +440,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(body);
-    else
+    else if ( this.last('HTML') )
       this.last('HTML').append(body);
+    else
+      this.append(body);
     
     /** Allow for call chaining */
     return body;
@@ -431,8 +463,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(bold);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(bold);
+    else
+      this.append(bold);
     
     /** Allow for call chaining */
     return bold;
@@ -452,8 +486,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(button);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(button);
+    else
+      this.append(button);
     
     /** Allow for call chaining */
     return button;
@@ -473,8 +509,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(buttonCheckbox);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(buttonCheckbox);
+    else
+      this.append(buttonCheckbox);
     
     /** Allow for call chaining */
     return buttonCheckbox;
@@ -494,8 +532,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(buttonGroup);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(buttonGroup);
+    else
+      this.append(buttonGroup);
     
     /** Allow for call chaining */
     return buttonGroup;
@@ -515,8 +555,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(buttonLink);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(buttonLink);
+    else
+      this.append(buttonLink);
     
     /** Allow for call chaining */
     return buttonLink;
@@ -536,8 +578,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(buttonRadio);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(buttonRadio);
+    else
+      this.append(buttonRadio);
     
     /** Allow for call chaining */
     return buttonRadio;
@@ -557,8 +601,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(buttonToolbar);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(buttonToolbar);
+    else
+      this.append(buttonToolbar);
     
     /** Allow for call chaining */
     return buttonToolbar;
@@ -580,8 +626,10 @@ class Page extends html.Container {
       this.last(arg1).append(canvas);
     else if ( this.last('Col') )
       this.last('Col').append(canvas);
-    else
+    else if ( this.last('Body') )
       this.last('Body').append(canvas);
+    else
+      this.append(canvas);
     
     /** Allow for call chaining */
     return canvas;
@@ -601,8 +649,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(caption);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(caption);
+    else
+      this.append(caption);
     
     /** Allow for call chaining */
     return caption;
@@ -621,8 +671,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(card);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(card);
+    else
+      this.append(card);
     
     /** Allow for call chaining */
     return card;
@@ -641,8 +693,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(cardBody);
-    else
+    else if ( this.last('Card') )
       this.last('Card').append(cardBody);
+    else
+      this.append(cardBody);
     
     /** Allow for call chaining */
     return cardBody;
@@ -661,8 +715,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(cardColumns);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(cardColumns);
+    else
+      this.append(cardColumns);
     
     /** Allow for call chaining */
     return cardColumns;
@@ -681,8 +737,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(cardDeck);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(cardDeck);
+    else
+      this.append(cardDeck);
     
     /** Allow for call chaining */
     return cardDeck;
@@ -701,8 +759,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(cardFooter);
-    else
+    else if ( this.last('Card') )
       this.last('Card').append(cardFooter);
+    else
+      this.append(cardFooter);
     
     /** Allow for call chaining */
     return cardFooter;
@@ -721,8 +781,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(cardGroup);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(cardGroup);
+    else
+      this.append(cardGroup);
     
     /** Allow for call chaining */
     return cardGroup;
@@ -741,8 +803,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(cardHeader);
-    else
+    else if ( this.last('Card') )
       this.last('Card').append(cardHeader);
+    else
+      this.append(cardHeader);
     
     /** Allow for call chaining */
     return cardHeader;
@@ -762,8 +826,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(cardImage);
-    else
+    else if ( this.last('Card') )
       this.last('Card').append(cardImage);
+    else
+      this.append(cardImage);
     
     /** Allow for call chaining */
     return cardImage;
@@ -783,8 +849,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(cardImageOverlay);
-    else
+    else if ( this.last('Card') )
       this.last('Card').append(cardImageOverlay);
+    else
+      this.append(cardImageOverlay);
     
     /** Allow for call chaining */
     return cardImageOverlay;
@@ -803,8 +871,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(carousel);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(carousel);
+    else
+      this.append(carousel);
     
     /** Allow for call chaining */
     return carousel;
@@ -824,8 +894,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(carouselItem);
-    else
+    else if ( this.last('Carousel') )
       this.last('Carousel').append(carouselItem);
+    else
+      this.append(carouselItem);
     
     /** Allow for call chaining */
     return carouselItem;
@@ -845,8 +917,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(citation);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(citation);
+    else
+      this.append(citation);
     
     /** Allow for call chaining */
     return citation;
@@ -866,8 +940,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(code);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(code);
+    else
+      this.append(code);
     
     /** Allow for call chaining */
     return code;
@@ -888,8 +964,10 @@ class Page extends html.Container {
       this.lastParent('Row').append(col);
     else if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(col);
-    else
+    else if ( this.last('Row') )
       this.last('Row').append(col);
+    else
+      this.append(col);
     
     /** Allow for call chaining */
     return col;
@@ -908,8 +986,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(collapse);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(collapse);
+    else
+      this.append(collapse);
     
     /** Allow for call chaining */
     return collapse;
@@ -929,8 +1009,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(columnGroup);
-    else
+    else if ( this.last('Table') )
       this.last('Table').append(columnGroup);
+    else
+      this.append(columnGroup);
     
     /** Allow for call chaining */
     return columnGroup;
@@ -950,8 +1032,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(column);
-    else
+    else if ( this.last('ColumnGroup') )
       this.last('ColumnGroup').append(column);
+    else
+      this.append(column);
     
     /** Allow for call chaining */
     return column;
@@ -970,8 +1054,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(dataList);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(dataList);
+    else
+      this.append(dataList);
     
     /** Allow for call chaining */
     return dataList;
@@ -990,8 +1076,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(definition);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(definition);
+    else
+      this.append(definition);
     
     /** Allow for call chaining */
     return definition;
@@ -1011,8 +1099,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(definitionDescription);
-    else
+    else if ( this.last('DefinitionList') )
       this.last('DefinitionList').append(definitionDescription);
+    else
+      this.append(definitionDescription);
     
     /** Allow for call chaining */
     return definitionDescription;
@@ -1032,8 +1122,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(definitionList);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(definitionList);
+    else
+      this.append(definitionList);
     
     /** Allow for call chaining */
     return definitionList;
@@ -1053,8 +1145,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(definitionTerm);
-    else
+    else if ( this.last('DefinitionList') )
       this.last('DefinitionList').append(definitionTerm);
+    else
+      this.append(definitionTerm);
     
     /** Allow for call chaining */
     return definitionTerm;
@@ -1073,8 +1167,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(deleted);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(deleted);
+    else
+      this.append(deleted);
     
     /** Allow for call chaining */
     return deleted;
@@ -1093,8 +1189,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(details);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(details);
+    else
+      this.append(details);
     
     /** Allow for call chaining */
     return details;
@@ -1113,8 +1211,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(dialog);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(dialog);
+    else
+      this.append(dialog);
     
     /** Allow for call chaining */
     return dialog;
@@ -1133,8 +1233,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(div);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(div);
+    else
+      this.append(div);
     
     /** Allow for call chaining */
     return div;
@@ -1154,8 +1256,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(dropdownDivider);
-    else
+    else if ( this.last('DropdownMenu') )
       this.last('DropdownMenu').append(dropdownDivider);
+    else
+      this.append(dropdownDivider);
     
     /** Allow for call chaining */
     return dropdownDivider;
@@ -1175,8 +1279,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(dropdownHeader);
-    else
+    else if ( this.last('DropdownMenu') )
       this.last('DropdownMenu').append(dropdownHeader);
+    else
+      this.append(dropdownHeader);
     
     /** Allow for call chaining */
     return dropdownHeader;
@@ -1196,8 +1302,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(dropdownItem);
-    else
+    else if ( this.last('DropdownMenu') )
       this.last('DropdownMenu').append(dropdownItem);
+    else
+      this.append(dropdownItem);
     
     /** Allow for call chaining */
     return dropdownItem;
@@ -1217,8 +1325,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(dropdownMenu);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(dropdownMenu);
+    else
+      this.append(dropdownMenu);
     
     /** Allow for call chaining */
     return dropdownMenu;
@@ -1237,8 +1347,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(embed);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(embed);
+    else
+      this.append(embed);
     
     /** Allow for call chaining */
     return embed;
@@ -1257,8 +1369,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(emphasized);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(emphasized);
+    else
+      this.append(emphasized);
     
     /** Allow for call chaining */
     return emphasized;
@@ -1277,8 +1391,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(fieldSet);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(fieldSet);
+    else
+      this.append(fieldSet);
     
     /** Allow for call chaining */
     return fieldSet;
@@ -1297,8 +1413,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(figure);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(figure);
+    else
+      this.append(figure);
     
     /** Allow for call chaining */
     return figure;
@@ -1317,8 +1435,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(figureCaption);
-    else
+    else if ( this.last('Figure') )
       this.last('Figure').append(figureCaption);
+    else
+      this.append(figureCaption);
     
     /** Allow for call chaining */
     return figureCaption;
@@ -1337,8 +1457,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(footer);
-    else
+    else if ( this.last('Body') )
       this.last('Body').append(footer);
+    else
+      this.append(footer);
     
     /** Allow for call chaining */
     return footer;
@@ -1357,8 +1479,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(form);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(form);
+    else
+      this.append(form);
     
     /** Allow for call chaining */
     return form;
@@ -1377,8 +1501,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(head);
-    else
+    else if ( this.last('HTML') )
       this.last('HTML').append(head);
+    else
+      this.append(head);
     
     /** Allow for call chaining */
     return head;
@@ -1397,8 +1523,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(header);
-    else
+    else if ( this.last('Body') )
       this.last('Body').append(header);
+    else
+      this.append(header);
     
     /** Allow for call chaining */
     return header;
@@ -1417,8 +1545,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(heading);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(heading);
+    else
+      this.append(heading);
     
     /** Allow for call chaining */
     return heading;
@@ -1437,8 +1567,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(heading);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(heading);
+    else
+      this.append(heading);
     
     /** Allow for call chaining */
     return heading;
@@ -1457,8 +1589,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(heading);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(heading);
+    else
+      this.append(heading);
     
     /** Allow for call chaining */
     return heading;
@@ -1477,8 +1611,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(heading);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(heading);
+    else
+      this.append(heading);
     
     /** Allow for call chaining */
     return heading;
@@ -1497,8 +1633,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(heading);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(heading);
+    else
+      this.append(heading);
     
     /** Allow for call chaining */
     return heading;
@@ -1517,8 +1655,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(heading);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(heading);
+    else
+      this.append(heading);
     
     /** Allow for call chaining */
     return heading;
@@ -1538,8 +1678,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(headingGroup);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(headingGroup);
+    else
+      this.append(headingGroup);
     
     /** Allow for call chaining */
     return headingGroup;
@@ -1559,8 +1701,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(horizontalRule);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(horizontalRule);
+    else
+      this.append(horizontalRule);
     
     /** Allow for call chaining */
     return horizontalRule;
@@ -1627,8 +1771,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(image);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(image);
+    else
+      this.append(image);
     
     /** Allow for call chaining */
     return image;
@@ -1647,8 +1793,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(input);
-    else
+    else if ( this.last('Form') )
       this.last('Form').append(input);
+    else
+      this.append(input);
     
     /** Allow for call chaining */
     return input;
@@ -1668,8 +1816,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(inputSet);
-    else
+    else if ( this.last('Form') )
       this.last('Form').append(inputSet);
+    else
+      this.append(inputSet);
     
     /** Allow for call chaining */
     return inputSet;
@@ -1689,8 +1839,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(inserted);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(inserted);
+    else
+      this.append(inserted);
     
     /** Allow for call chaining */
     return inserted;
@@ -1710,8 +1862,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(italic);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(italic);
+    else
+      this.append(italic);
     
     /** Allow for call chaining */
     return italic;
@@ -1731,8 +1885,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(jumbotron);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(jumbotron);
+    else
+      this.append(jumbotron);
     
     /** Allow for call chaining */
     return jumbotron;
@@ -1752,8 +1908,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(keyboard);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(keyboard);
+    else
+      this.append(keyboard);
     
     /** Allow for call chaining */
     return keyboard;
@@ -1773,8 +1931,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(label);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(label);
+    else
+      this.append(label);
     
     /** Allow for call chaining */
     return label;
@@ -1842,8 +2002,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(legend);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(legend);
+    else
+      this.append(legend);
     
     /** Allow for call chaining */
     return legend;
@@ -1865,8 +2027,10 @@ class Page extends html.Container {
       this.last(arg1).append(lineBreak);
     else if ( this.last('Col') )
       this.last('Col').append(lineBreak);
-    else
+    else if ( this.last('Body') )
       this.last('Body').append(lineBreak);
+    else
+      this.append(lineBreak);
     
     /** Allow for call chaining */
     return lineBreak;
@@ -1886,8 +2050,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(link);
-    else
+    else if ( this.last('Head') )
       this.last('Head').append(link);
+    else
+      this.append(link);
     
     /** Allow for call chaining */
     return link;
@@ -1907,8 +2073,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(listGroup);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(listGroup);
+    else
+      this.append(listGroup);
     
     /** Allow for call chaining */
     return listGroup;
@@ -1928,8 +2096,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(listGroupAnchor);
-    else
+    else if ( this.last('ListGroup') )
       this.last('ListGroup').append(listGroupAnchor);
+    else
+      this.append(listGroupAnchor);
     
     /** Allow for call chaining */
     return listGroupAnchor;
@@ -1949,8 +2119,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(listGroupButton);
-    else
+    else if ( this.last('ListGroup') )
       this.last('ListGroup').append(listGroupButton);
+    else
+      this.append(listGroupButton);
     
     /** Allow for call chaining */
     return listGroupButton;
@@ -1970,8 +2142,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(listGroupItem);
-    else
+    else if ( this.last('ListGroup') )
       this.last('ListGroup').append(listGroupItem);
+    else
+      this.append(listGroupItem);
     
     /** Allow for call chaining */
     return listGroupItem;
@@ -1991,8 +2165,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(listItem);
-    else
+    else if ( this.last('UnorderedList') )
       this.last('UnorderedList').append(listItem);
+    else
+      this.append(listItem);
     
     /** Allow for call chaining */
     return listItem;
@@ -2011,8 +2187,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(main);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(main);
+    else
+      this.append(main);
     
     /** Allow for call chaining */
     return main;
@@ -2031,8 +2209,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(map);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(map);
+    else
+      this.append(map);
     
     /** Allow for call chaining */
     return map;
@@ -2051,8 +2231,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(mark);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(mark);
+    else
+      this.append(mark);
     
     /** Allow for call chaining */
     return mark;
@@ -2071,8 +2253,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(menu);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(menu);
+    else
+      this.append(menu);
     
     /** Allow for call chaining */
     return menu;
@@ -2091,8 +2275,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(menuItem);
-    else
+    else if ( this.last('Menu') )
       this.last('Menu').append(menuItem);
+    else
+      this.append(menuItem);
     
     /** Allow for call chaining */
     return menuItem;
@@ -2111,8 +2297,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(meta);
-    else
+    else if ( this.last('Head') )
       this.last('Head').append(meta);
+    else
+      this.append(meta);
     
     /** Allow for call chaining */
     return meta;
@@ -2131,8 +2319,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(meter);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(meter);
+    else
+      this.append(meter);
     
     /** Allow for call chaining */
     return meter;
@@ -2151,8 +2341,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(modal);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(modal);
+    else
+      this.append(modal);
     
     /** Allow for call chaining */
     return modal;
@@ -2172,8 +2364,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(modalBody);
-    else
+    else if ( this.last('Modal') )
       this.last('Modal').append(modalBody);
+    else
+      this.append(modalBody);
     
     /** Allow for call chaining */
     return modalBody;
@@ -2193,8 +2387,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(modalFooter);
-    else
+    else if ( this.last('Modal') )
       this.last('Modal').append(modalFooter);
+    else
+      this.append(modalFooter);
     
     /** Allow for call chaining */
     return modalFooter;
@@ -2214,8 +2410,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(modalHeader);
-    else
+    else if ( this.last('Modal') )
       this.last('Modal').append(modalHeader);
+    else
+      this.append(modalHeader);
     
     /** Allow for call chaining */
     return modalHeader;
@@ -2235,8 +2433,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(multimediaObject);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(multimediaObject);
+    else
+      this.append(multimediaObject);
     
     /** Allow for call chaining */
     return multimediaObject;
@@ -2281,8 +2481,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(nav);
-    else
+    else if ( this.last('Body') )
       this.last('Body').append(nav);
+    else
+      this.append(nav);
     
     /** Allow for call chaining */
     return nav;
@@ -2301,8 +2503,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(noScript);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(noScript);
+    else
+      this.append(noScript);
     
     /** Allow for call chaining */
     return noScript;
@@ -2322,8 +2526,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(optionGroup);
-    else
+    else if ( this.last('Select') )
       this.last('Select').append(optionGroup);
+    else
+      this.append(optionGroup);
     
     /** Allow for call chaining */
     return optionGroup;
@@ -2343,8 +2549,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(option);
-    else
+    else if ( this.last('Select') )
       this.last('Select').append(option);
+    else
+      this.append(option);
     
     /** Allow for call chaining */
     return option;
@@ -2363,8 +2571,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(orderedList);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(orderedList);
+    else
+      this.append(orderedList);
     
     /** Allow for call chaining */
     return orderedList;
@@ -2383,8 +2593,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(output);
-    else
+    else if ( this.last('Form') )
       this.last('Form').append(output);
+    else
+      this.append(output);
     
     /** Allow for call chaining */
     return output;
@@ -2403,8 +2615,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(param);
-    else
+    else if ( this.last('MultimediaObject') )
       this.last('MultimediaObject').append(param);
+    else
+      this.append(param);
     
     /** Allow for call chaining */
     return param;
@@ -2424,8 +2638,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(paragraph);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(paragraph);
+    else
+      this.append(paragraph);
     
     /** Allow for call chaining */
     return paragraph;
@@ -2445,8 +2661,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(picture);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(picture);
+    else
+      this.append(picture);
     
     /** Allow for call chaining */
     return picture;
@@ -2466,8 +2684,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(preformattedText);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(preformattedText);
+    else
+      this.append(preformattedText);
     
     /** Allow for call chaining */
     return preformattedText;
@@ -2487,8 +2707,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(progress);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(progress);
+    else
+      this.append(progress);
     
     /** Allow for call chaining */
     return progress;
@@ -2508,8 +2730,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(progressBar);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(progressBar);
+    else
+      this.append(progressBar);
     
     /** Allow for call chaining */
     return progressBar;
@@ -2529,8 +2753,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(quotation);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(quotation);
+    else
+      this.append(quotation);
     
     /** Allow for call chaining */
     return quotation;
@@ -2572,8 +2798,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(sample);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(sample);
+    else
+      this.append(sample);
     
     /** Allow for call chaining */
     return sample;
@@ -2592,8 +2820,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(script);
-    else
+    else if ( this.last('Head') )
       this.last('Head').append(script);
+    else
+      this.append(script);
     
     /** Allow for call chaining */
     return script;
@@ -2613,8 +2843,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(section);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(section);
+    else
+      this.append(section);
     
     /** Allow for call chaining */
     return section;
@@ -2633,8 +2865,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(select);
-    else
+    else if ( this.last('Form') )
       this.last('Form').append(select);
+    else
+      this.append(select);
     
     /** Allow for call chaining */
     return select;
@@ -2654,8 +2888,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(small);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(small);
+    else
+      this.append(small);
     
     /** Allow for call chaining */
     return small;
@@ -2675,8 +2911,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(source);
-    else
+    else if ( this.last('Audio') )
       this.last('Audio').append(source);
+    else
+      this.append(source);
     
     /** Allow for call chaining */
     return source;
@@ -2695,8 +2933,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(span);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(span);
+    else
+      this.append(span);
     
     /** Allow for call chaining */
     return span;
@@ -2716,8 +2956,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(strikethrough);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(strikethrough);
+    else
+      this.append(strikethrough);
     
     /** Allow for call chaining */
     return strikethrough;
@@ -2737,8 +2979,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(strong);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(strong);
+    else
+      this.append(strong);
     
     /** Allow for call chaining */
     return strong;
@@ -2758,8 +3002,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(style);
-    else
+    else if ( this.last('Head') )
       this.last('Head').append(style);
+    else
+      this.append(style);
     
     /** Allow for call chaining */
     return style;
@@ -2779,8 +3025,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(subscript);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(subscript);
+    else
+      this.append(subscript);
     
     /** Allow for call chaining */
     return subscript;
@@ -2800,8 +3048,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(summary);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(summary);
+    else
+      this.append(summary);
     
     /** Allow for call chaining */
     return summary;
@@ -2821,8 +3071,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(superscript);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(superscript);
+    else
+      this.append(superscript);
     
     /** Allow for call chaining */
     return superscript;
@@ -2842,8 +3094,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(svg);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(svg);
+    else
+      this.append(svg);
     
     /** Allow for call chaining */
     return svg;
@@ -2863,8 +3117,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(tableBody);
-    else
+    else if ( this.last('Table') )
       this.last('Table').append(tableBody);
+    else
+      this.append(tableBody);
     
     /** Allow for call chaining */
     return tableBody;
@@ -2884,8 +3140,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(tableData);
-    else
+    else if ( this.last('TableRow') )
       this.last('TableRow').append(tableData);
+    else
+      this.append(tableData);
     
     /** Allow for call chaining */
     return tableData;
@@ -2905,8 +3163,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(tableFooter);
-    else
+    else if ( this.last('Table') )
       this.last('Table').append(tableFooter);
+    else
+      this.append(tableFooter);
     
     /** Allow for call chaining */
     return tableFooter;
@@ -2926,8 +3186,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(tableHead);
-    else
+    else if ( this.last('Table') )
       this.last('Table').append(tableHead);
+    else
+      this.append(tableHead);
     
     /** Allow for call chaining */
     return tableHead;
@@ -2947,8 +3209,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(tableHeader);
-    else
+    else if ( this.last('TableRow') )
       this.last('TableRow').append(tableHeader);
+    else
+      this.append(tableHeader);
     
     /** Allow for call chaining */
     return tableHeader;
@@ -2968,8 +3232,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(tableRow);
-    else
+    else if ( this.last('TableBody') )
       this.last('TableBody').append(tableRow);
+    else
+      this.append(tableRow);
     
     /** Allow for call chaining */
     return tableRow;
@@ -2988,8 +3254,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(table);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(table);
+    else
+      this.append(table);
     
     /** Allow for call chaining */
     return table;
@@ -3008,8 +3276,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(template);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(template);
+    else
+      this.append(template);
     
     /** Allow for call chaining */
     return template;
@@ -3028,8 +3298,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(text);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(text);
+    else
+      this.append(text);
     
     /** Allow for call chaining */
     return text;
@@ -3048,8 +3320,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(textarea);
-    else
+    else if ( this.last('Form') )
       this.last('Form').append(textarea);
+    else
+      this.append(textarea);
     
     /** Allow for call chaining */
     return textarea;
@@ -3068,8 +3342,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(time);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(time);
+    else
+      this.append(time);
     
     /** Allow for call chaining */
     return time;
@@ -3088,8 +3364,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(title);
-    else
+    else if ( this.last('Head') )
       this.last('Head').append(title);
+    else
+      this.append(title);
     
     /** Allow for call chaining */
     return title;
@@ -3108,8 +3386,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(track);
-    else
+    else if ( this.last('Video') )
       this.last('Video').append(track);
+    else
+      this.append(track);
     
     /** Allow for call chaining */
     return track;
@@ -3128,8 +3408,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(underline);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(underline);
+    else
+      this.append(underline);
     
     /** Allow for call chaining */
     return underline;
@@ -3149,8 +3431,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(unorderedList);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(unorderedList);
+    else
+      this.append(unorderedList);
     
     /** Allow for call chaining */
     return unorderedList;
@@ -3169,8 +3453,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(variable);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(variable);
+    else
+      this.append(variable);
     
     /** Allow for call chaining */
     return variable;
@@ -3189,8 +3475,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(video);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(video);
+    else
+      this.append(video);
     
     /** Allow for call chaining */
     return video;
@@ -3210,8 +3498,10 @@ class Page extends html.Container {
     /** Add to last container of indicated type */
     if ( typeof arg1 == 'string' && arg1.length > 0 )
       this.last(arg1).append(wordBreakOpportunity);
-    else
+    else if ( this.last('Col') )
       this.last('Col').append(wordBreakOpportunity);
+    else
+      this.append(wordBreakOpportunity);
     
     /** Allow for call chaining */
     return wordBreakOpportunity;
